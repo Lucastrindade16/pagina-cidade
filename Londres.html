@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Londres - Imagens</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f4f4f4;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+img {
+max-width: 600px;
+height: 300px;
+border-radius: 8px;
+}
+.caption {
+font-style: italic;
+color: #555;
+margin-top: 10px;
+}
+.button-container {
+margin-top: 20px;
+}
+.button-container button {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+.button-container button:hover {
+background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Descubra um pouco sobre Londres</h1>
+<p>Descubra a essência de Londres através de suas imagens icônicas e sua rica herança histórica. Clique nos botões abaixo para explorar diferentes imagens e mergulhar nos pontos turísticos e na beleza única da cidade.</p>
+<img id="ny-image" src="imagens/imagem.png" alt="Nova York" />
+<div id="caption" class="caption">Torre de Londres</div>
+<div class="button-container">
+<button onclick="changeImage('imagens/imagem.png', 'Torre de Londres: Localizada às margens do rio Tâmisa, é um histórico castelo que já foi fortaleza, palácio e prisão. Atualmente, abriga as Joias da Coroa e oferece uma visão fascinante da história britânica.')">Imagem 1</button>
+<button onclick="changeImage('imagens/imagem2.png', 'London Eye no Inverno: É uma impressionante roda-gigante localizada às margens do rio Tâmisa, oferecendo vistas panorâmicas espetaculares de Londres. Com 135 metros de altura, é um dos marcos modernos mais reconhecíveis da cidade e proporciona uma experiência única e deslumbrante.')">Imagem 2</button>
+<button onclick="changeImage('imagens/imagem3.png', 'Galeria Nacional apos morte da Rainha Elizabeth: Situada na Trafalgar Square, é um renomado museu de arte em Londres que abriga uma vasta coleção de obras-primas europeias, datadas do século XIII ao XIX. Com peças de mestres como Van Gogh, da Vinci e Rembrandt, é um destino imperdível para os amantes da arte.')">Imagem 3</button>
+<button onclick="changeImage('imagens/imagem4.png', 'Tower Bridge: A Tower Bridge, icônica ponte basculante sobre o rio Tâmisa, é um dos marcos mais emblemáticos de Londres. Inaugurada em 1894, combina arquitetura vitoriana com tecnologia moderna, oferecendo vistas deslumbrantes da cidade e um passeio único através de suas passarelas elevadas.')">Imagem 4</button>
+</div>
+</div>
+ 
+<script>
+function changeImage(src, captionText) {
+document.getElementById('ny-image').src = src;
+document.getElementById('caption').textContent = captionText;
+}
+</script>
+</body>
+</html>
